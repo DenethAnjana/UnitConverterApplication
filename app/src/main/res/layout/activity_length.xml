@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:padding="20dp"
+    tools:context=".LengthActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:gravity="left"
+                    android:text="Length Converter"
+                    android:textColor="#47066A"
+                    android:textSize="30dp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/length2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:gravity="left"
+                    android:text="Length"
+                    android:textColor="#47066A"
+                    android:textSize="25dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editTextLength"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#C28BCC"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textColor="#47066A"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:gravity="left"
+                    android:text="Convert From"
+                    android:textColor="#47066A"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spinnerConvertFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#C28BCC"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:gravity="left"
+                    android:text="Convert To"
+                    android:textColor="#47066A"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spinnerConvertTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#C28BCC"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLengthConverter"
+                android:layout_width="188dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#860D9A"
+                android:text="CONVERT"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:gravity="left"
+                    android:text="Result :"
+                    android:textColor="#47066A"
+                    android:textSize="25dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/tvLengthResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:textColor="#47066A"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
